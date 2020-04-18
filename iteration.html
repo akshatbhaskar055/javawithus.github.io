@@ -1,0 +1,268 @@
+<html>
+<head>
+ <link rel="stylesheet" href="j.css">
+ <style>
+  font{
+    text-shadow: 2px 2px 8px #FF0000;
+  }
+  
+  </style>
+</head>
+<body>
+<br>
+<font face="Century Gothic" size="8" color="red"><center>    Java.withUs </center></font>
+
+<p align="right"  style="color:maroon;" > Learn Anything!    </p>
+     <nav>
+      <ul>
+        <li>
+            <a href=home.html>Home</a>
+        </li>
+        <li>
+            <a href=data.html>Data Types</a>
+        </li>
+        <li>
+            <a href=r.html>Variables</a>
+        </li>
+        <li>
+            <a href=type_conversion.html>Type Conversion</a>
+        </li>
+        <li>
+            <a href=selection.html>Selection Statement</a>
+        </li>
+        <li>
+            <a href=iteration.html>Iteration Statement</a>
+        </li>
+         <li>
+            <a href=branching.html>Branch Control Statement</a>
+        </li>
+      </ul>
+    </nav>
+
+    <br ><br>
+     <h1 style="color:black;"> <u><center>Iteration Statements in Java </u></center></h1>
+   
+
+
+
+
+
+<P>
+  <div style="margin: 20px 100px 20px 100px;">
+<H2 style="color: darkseagreen;">
+<UL>Iteration statements create loops in the program. In other words, it repeats the set of statements until the condition for termination is met.</H2>    
+  <H3 style="color: grey;">
+  <LI> Iteratin statments are statments which appear in the Source code only once, but it execute many times.</LI>
+  <LI>Such kind of statments are called loop.</LI>
+  <LI>Almost all the programming languages support looping instruction.</LI></UL>
+  <H3 style="middle">
+  <CENTER><img src="p1.png" align="middle" 
+  alt="iteration statment" width="250" height="250"> </H3></CENTER>
+
+
+<P></P><BR>  <BR>
+    <H3 style="color: darkseagreen ;">
+    Iteration statments causes java to execute one or more statments as long as condition exists.
+    <BR><U>Each repetition statment request:-</U>
+  </H3>
+  <OL type="1">
+    <H3 style="color: grey;">
+      <LI>A control variable/loop counter.</LI>
+      <LI>The initial value of control variable</LI>
+      <LI>The increment(Decrement) by which the control variable is modified each time through the loop.</LI>
+      <LI>The loop continuation condition the deterrmin if looping should continue.</LI>
+ </H3></OL>
+ <BR><H2><U> BASIC ELEMENTS OF ITERATIONS:-</U></H2></BR>
+ <CENTER><img src="p2.png" align="middle"
+  alt="iteration statment" width="800" height="400"></CENTER>
+  <CENTER><H2 style="color: black;"><U>TYPES OF ITERATION METHOD</U></H2></CENTER>
+  <H3 style="color: darkseagreen;"> There are three types of Iteration Method:-</H3>
+  <OL type="1">
+    <H3 style="color: grey;">
+    <LI> While Loop.     
+    <LI> For Loop.   
+    <LI> Do While Loop.    
+    </LI></H3></OL>
+
+<H2 style="color: black;"> 1. While Loop: </H2><H3 style="color: grey;">Java while loop is a control flow statement that allows code to be executed repeatedly based on a given Boolean condition.
+  The while loop can be thought of as a repeating if statement.
+<UL>
+    <img src="p3.png" align="right"
+      alt="while loop" height="500" width="300">
+      <h3 style="color: brown;">Syntax:-</h3>
+      <TABLE width="400" bgcolor="aliceblue" border="0">
+          <TBODY>
+          <TR>
+          <td><pre>
+            while (test_expression)
+            {
+
+              //statments
+
+              update expression;
+            }
+          </pre></td></TR></TBODY></TABLE>
+            
+  <H3 style="color: brown;">The various parts of the While loop are:-</H3>
+  <ol=1>
+     <li> <Strong><u>Test Expression:</u></Strong>
+      In this expression we have to test the condition. If the condition evaluates to true then we will execute the body of the loop and go to update expression. Otherwise, we will exit from the while loop.</li>
+      <strong>Example:</strong>
+      <TABLE width="400" bgcolor="aliceblue" border="0">
+          <TBODY>
+          <tr>
+            <td>i <= 10
+            </td></TR></TBODY></TABLE><br>
+     <li><strong><u>Update Expression:</u></strong>
+      After executing the loop body, this expression increments/decrements the loop variable by some value.</li></ol>
+      <TABLE width="400" bgcolor="aliceblue" border="0">
+          <TBODY>
+          <tr>
+            <td>i++;
+            </td></TR></TBODY></TABLE>
+<H3 style="color:brown;"> Example:-</H3>
+
+
+<TABLE width="400" bgcolor="aliceblue" border="0">
+  <TBODY>
+  <TR>
+    <TD><pre>
+      class WhileloopExample
+       {
+          public static void main(String args[])
+            {
+              int i=10;
+              while(i>1{})
+              System.out.println(i);
+              i--;
+            }
+        } 
+    </TD></TR></TBODY></TABLE><BR>
+<H3 style="color: brown;"> Output:-</H3>
+<TABLE width="400" bgcolor="aliceblue" border="0"><TD> <pre>
+10
+9
+8
+7
+6
+5
+4
+3
+2
+</pre>
+</TD>
+</TABLE>
+<HR><BR>
+  <H2 style="color: black;"> 2. Do While Loop: </H2><H3 style="color: grey;">The do/while loop is a variant of the while loop. This loop will execute the code block once, before checking if the condition is true, then it will repeat the loop as long as the condition is true.<BR>
+    <img src="p4.png" align="right"
+    alt="while loop" height="450" width="750">
+  <h3 style="color: brown;">Syntax:-</h3>
+  <TABLE width="400" bgcolor="aliceblue" border="0">
+          <TBODY>
+          <TR>
+            <td><pre>
+              do 
+              {
+                // code block to be executed
+              }
+              while (condition);
+            </td></TR></TBODY></TABLE>
+          <H3 style="color:brown;"> Example:-</H3>
+
+
+          <TABLE width="400" bgcolor="aliceblue" border="0">
+  <TBODY>
+  <TR>
+    <TD>
+      <pre>
+        class DoWhileloopExample 
+        {
+          public static void main(String args[])
+          {
+            int x=21, sum=0;
+            do
+            {
+              sum += x;
+              x--;
+            } 
+            while (x > 10);
+            System.out.println("Summation: " + sum);
+          }
+        </pre></TD></TR></TBODY></TABLE><BR>
+
+      <H3 style="color: brown;"> Output:-</H3>
+      <TABLE width="400" bgcolor="aliceblue" border="0"><TD>Summation : 176 </TD></TABLE>
+      <HR><BR>
+
+        <H2 style="color: black;"> 3. For Loop: </H2><H3 style="color: grey;">Java for loop provides a concise way of writing the loop structure. The for statement consumes the initialization, condition and increment/decrement in one line thereby providing a shorter, easy to debug structure of looping.<br>
+          <img src="p6.png" align="right"
+          alt="while loop" height="350" width="600">
+          <TABLE width="400" bgcolor="aliceblue" border="0">
+             
+          <TR>
+            <td><pre>
+              for (initialization expr; test expr; update exp
+              // body of the loop
+              // statements we want to execute
+              }
+            </pre></td></TR></TBODY></TABLE>
+          <H3 style="color: brown;">The various parts of the FOR LOOP are:-</H3>
+  <ol=1>
+     <li> <Strong><u>Initialization Expression:</u></Strong>In this expression we have to initialize the loop counter to some value.
+      <strong>Example:</strong>
+      <TABLE width="400" bgcolor="aliceblue" border="0">
+          <TBODY>
+          <tr>
+            <td>int i=1;
+            </td></TR></TBODY></TABLE><br>
+     <li> <Strong><u>Test Expression:</u></Strong>In this expression we have to test the condition. If the condition evaluates to true then we will execute the body of the loop and go to update expression. Otherwise, we will exit from the for loop.<br>
+      <strong>Example:</strong>
+      <TABLE width="400" bgcolor="aliceblue" border="0">
+          <TBODY>
+          <tr>
+            <td>i <= 10
+            </td></TR></TBODY></TABLE><br>
+     <li><strong><u>Update Expression:</u></strong>
+      After executing the loop body, this expression increments/decrements the loop variable by some value.</li></ol>
+      <TABLE width="400" bgcolor="aliceblue" border="0">
+          <TBODY>
+          <tr>
+            <td>i++;
+            </td></TR></TBODY></TABLE>
+            <img src="p5.png" align="right"
+            alt="while loop" height="300" width="500">
+            <H3 style="color:brown;"> Example:-</H3>
+
+
+            <TABLE width="400" bgcolor="aliceblue" border="0">
+  <TBODY>
+  <TR>
+    <TD><pre>
+      class ForloopExample
+       {
+          public static void main(String args[])
+          {
+            int sum=0;
+            for (int x = 1; x <= 10; x++)         // for loop begins and runs till x <= 10
+             {
+               sum = sum + x;
+             }
+           System.out.println("Sum: " + sum);
+            i--;
+        } 
+    </pre></TD></TR></TBODY></TABLE><BR>
+<H3 style="color: brown;"> Output:-</H3>
+<TABLE width="400" bgcolor="aliceblue" border="0"><td>SUM: 55 </TD></TABLE>
+
+</div>
+<HR><BR>
+      
+  
+
+</BODY></HTML>
+
+
+
+
+</body>
+</html>

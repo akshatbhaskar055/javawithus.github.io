@@ -1,0 +1,42 @@
+body {
+	margin: 0px auto; width: 100%; max-width: 1400px;
+}
+nav {
+	margin: 20px 0px; width: 100%;
+}
+nav ul {
+	list-style: none; overflow: hidden;
+}
+nav ul li {
+	width: 14%; float: left;
+}
+nav ul li a {
+	background: linear-gradient(rgb(205, 235, 142) 0%, rgb(176, 202, 52) 100%); padding: 10px 0px; width: 100%; text-align: center; display: block;
+}
+nav ul li a {
+	color: rgb(0, 0, 0); text-decoration: none;
+}
+nav ul li a:focus {
+	color: rgb(0, 0, 0); text-decoration: none;
+}
+nav ul li a:visited {
+	color: rgb(0, 0, 0); text-decoration: none;
+}
+nav ul li a:hover {
+	color: rgb(0, 0, 0); text-decoration: none;
+}
+nav ul li a:active {
+	color: rgb(0, 0, 0); text-decoration: none;
+}
+nav ul li a:hover {
+	background: linear-gradient(rgb(176, 202, 52) 0%, rgb(150, 196, 13) 100%);
+}
+nav ul li a:active {
+	background: linear-gradient(rgb(176, 202, 52) 0%, rgb(150, 196, 13) 100%);
+}
+nav ul li:first-child a {
+	border-top-left-radius: 8px; border-bottom-left-radius: 8px;
+}
+nav ul li:last-child a {
+	border-top-right-radius: 8px; border-bottom-right-radius: 8px;
+}

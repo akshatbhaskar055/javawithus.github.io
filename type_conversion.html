@@ -1,0 +1,110 @@
+<html>
+<head>
+ <link rel="stylesheet" href="j.css">
+ <style>
+  font{
+    text-shadow: 2px 2px 8px #FF0000;
+  }
+  
+  </style>
+</head>
+<body>
+<br>
+<font face="Century Gothic" size="8" color="red"><center>    Java.withUs </center></font>
+ 
+
+<p align="right"  style="color:maroon;" > Learn Anything!    </p>
+     <nav>
+      <ul>
+        <li>
+            <a href=home.html>Home</a>
+        </li>
+        <li>
+            <a href=data.html>Data Types</a>
+        </li>
+        <li>
+            <a href=r.html>Variables</a>
+        </li>
+        <li>
+            <a href=type_conversion.html>Type Conversion</a>
+        </li>
+        <li>
+            <a href=selection.html>Selection Statement</a>
+        </li>
+        <li>
+            <a href=iteration.html>Iteration Statement</a>
+        </li>
+         <li>
+            <a href=branching.html>Branch Control Statement</a>
+        </li>
+      </ul>
+    </nav>
+
+    <br ><br>
+     <h1 style="color:black;"> <u><center>Type Conversion</u></center></h1>
+   
+
+
+
+
+<p>
+  <div style="margin: 20px 100px 20px 100px;">
+<H2 style="color:darkseagreen">  Type conversion is when you assign a value of one primitive data type to another type.</H2>
+
+
+  <CENTER><H2 style="color: black;"><U>TWO TYPES OF TYPE CONVERSION:-</U></H2></CENTER>
+  <H3 style="color:grey">
+<OL type="1">
+  <LI><u>Widening Conversion (Automatic Type Conversion) </u>- converting a smaller type to a larger type size. This is done automatically.<br>
+    <br>
+  Eg. From <code>byte</code> to <code>short</code> to <code>char</code> to <code>int</code> to <code>long</code> to <code>float</code> to <code>double</code></LI>
+      <br>
+    <LI><bold><u>Narrowing Conversion</bold> (Manual Type Conversion)</u> - converting a larger type to a smaller size type. This must be done manually.<br>
+    <br>Eg. <code>double</code> to <code>float</code> to <code>long</code> to <code>int</code> to <code>char</code> to <code>short</code> to <code>byte</code>.</LI></OL><HR></H3>
+<H2 style="color:black;"> 1. Widening Conversion: </H2>
+<h3 style="color: grey;"> Conversion is done automatically when passing a smaller size type to a larger size type:  </h3>
+<img src="tc1.png" align="right"
+      alt="Widening">
+<H2 style="color: brown;"> Example:-</H2>
+<TABLE width="400" bgcolor="aliceblue" border="0">
+  <TBODY>
+  <TR>
+  <td><pre>
+    public class SomeClass {
+      public static void main(String[] args) {
+          int a = 9;
+          double d = a;    // Automatic Casting: int to double
+    
+          System.out.println(a);    // Outputs 9  
+          System.out.println(d);    // Outputs 9.0
+      }
+  }
+  </pre></td></TR></TBODY></TABLE>
+<HR>
+<BR>
+<H2 style="color:black;"> 2.Narrowing Type Conversion:</H2> 
+<h3 style="color: grey;"> This conversion must be done manually by placing the type in parentheses in front of the value:</h3>
+  <H2 style="color: brown;"> Example:-</H2>
+  <img src="tc2.png" align="right"
+  alt="Widening">
+  <TABLE width="400" bgcolor="aliceblue" border="0">
+    <TBODY>
+    <TR>
+      <TD>
+        <pre>
+          public class SomeClass {
+            public static void main(String[] args) {
+                double d = 9.993;
+                int a = (int) a;    // Manual Casting: double to int
+            
+                System.out.println(d);    // Outputs 9
+                System.out.println(a);    // Outputs 9.993  
+            }
+        }
+        </pre>
+      </TD></TR></TBODY></TABLE><BR>
+  <HR>
+  <BR></UL></H3>
+  </div>
+
+</BODY></HTML>

@@ -1,0 +1,231 @@
+<html>
+<head>
+ <link rel="stylesheet" href="j.css">
+ <style>
+	font{
+	  text-shadow: 2px 2px 8px #FF0000;
+	}
+	
+	</style>
+</head>
+<body>
+<br>
+<font face="Century Gothic" size="8" color="red"><center>    Java.withUs </center></font> 
+
+</font> 
+
+<p align="right"  style="color:maroon;" > Learn Anything!    </p>
+     <nav>
+      <ul>
+        <li>
+            <a href=home.html>Home</a>
+        </li>
+        <li>
+            <a href=data.html>Data Types</a>
+        </li>
+        <li>
+            <a href=r.html>Variables</a>
+        </li>
+        <li>
+            <a href=type_conversion.html>Type Conversion</a>
+        </li>
+        <li>
+            <a href=selection.html>Selection Statement</a>
+        </li>
+        <li>
+            <a href=iteration.html>Iteration Statement</a>
+        </li>
+         <li>
+            <a href=branching.html>Branch Control Statement</a>
+        </li>
+      </ul>
+    </nav>
+<head>
+<title>Branch Control Statements</title>
+</head>
+<tr>
+	<br>
+<h1 style="color:black;"> <center><u>Branching Statments</u></center></h1>
+</tr>
+
+<p>
+	<div style="margin: 20px 100px 20px 100px;">
+		<H2 style="color: darkseagreen;">
+			<UL>Java provides 3 branching statements named break, continue and return. Branching statements are used to change the normal flow of execution based on some condition. Some branching statements are used in looping statements and others used to change the flow of execution of the program.</UL></H2>
+			<CENTER><H2 style="color: black;"><U>TYPES OF BRANCHING STATMENTS</U></H2></CENTER>
+			<H3 style="color: darkseagreen;"> There are three types of Branching Statement:-</H3>
+  <OL type="1">
+    <H3 style="color: grey;">
+    <LI> Break.     
+    <LI> Continue.   
+    <LI> Return.    
+	</LI></H3></OL>
+	<H2 style="color: black;"> 1. Break: </H2>
+	<H3 style="color: grey;">
+		<LI>The Break statement in Java is used to break the loop and transfers control to the line immediate outside of the loop.
+		<br>
+		<LI>The Break keyword can also be used inside switch case statements to break the current choice and if not used then it can fall-through on switch.
+		</LI></H3></OL>
+		<img src="break.png" align="right"
+      alt="break">
+	<H3 style="color:brown;"> Example:-</H3>
+
+
+<TABLE width="400" bgcolor="aliceblue" border="0">
+  <TBODY>
+  <TR>
+    <TD><pre>
+		/*  Java break Statement Example
+		Save with file name BreakStatement.java */
+	  
+	public class BreakStatement
+	{
+	  public static void main(String args[])
+	  {
+		System.out.println("Java break Statement Example ");
+		int count = 10;
+		//INFINIT LOOP
+		while(true)
+		{
+		  if(count == 0)
+			break;
+		  System.out.println(count);
+		  count--;
+		}
+	  }
+	}
+	</TD></TR></TBODY></TABLE><BR>
+		<HR>
+	<H2 style="color: black;"> 2. Continue: </H2>
+	<H3 style="color: grey;">
+		<LI>The Continue statement is used to escape current execution,i.e. iteration, and transfers control back to the start of the loop.	
+		</LI></H3>
+		<img src="Continue.jpg" align="right"
+      alt="continue">
+		<H3 style="color:brown;"> Example:-</H3>
+
+
+		<TABLE width="400" bgcolor="aliceblue" border="0">
+		  <TBODY>
+		  <TR>
+			<TD><pre>
+				/*  Java continue Statement Example
+				Save with file name ContinueStatement.java  */
+			  
+			public class ContinueStatement
+			{
+			  public static void main(String args[])
+			  {
+				System.out.println("Java continue Statement Example ");
+				int count = 1;
+				while(count<=100)
+				{
+				  if(count <= 10)
+				  {
+					System.out.println(count);
+					count++;
+					continue;
+				  }
+				  else
+				  {
+					break;
+				  }
+				}
+			  }
+			}
+			
+			</TD></TR></TBODY></TABLE><BR>
+				<HR>
+	<H2 style="color: black;"> 3.Return: </H2>
+	<H3 style="color: grey;">
+	<LI>The return statement is used to explicitly return from a method. That is, it causes program control to transfer back to the caller of the method.
+	<LI>It can be used to cause execution to branch back to the caller of the method. Thus, the return statement immediately terminates the method in which it is executed.	
+		<H3 style="color: darkseagreen;" style="margin-left: initial;"> The return statement has two forms:-</H3>
+		
+		  <H4 style="color: grey;" style="margin-left: 500px;">
+		  <LI> One that returns a value.
+		  <LI>One that does not returns a value.
+	</LI></H4>	
+	<H3 style="color:brown;"> Example:-</H3>
+
+
+	<TABLE width="400" bgcolor="aliceblue" border="0">
+	  <TBODY>
+	  <TR>
+		<TD><pre>
+			/*  Java return Statement Example
+			Save with file name ReturnStatement.java  */
+		  
+		public class ReturnStatement
+		{
+		  public static void main(String args[])
+		  {
+			System.out.println("Java return Statement Example ");
+			int max = getMaximumNumber(10, 20);
+			if(max==0)
+			  System.out.println("Equal Numbers");
+			else
+			  System.out.println("Max Number is : " + max);
+		  }
+		  
+		  //METHOD
+		  public static int getMaximumNumber(int x, int y)
+		  {
+			if(x > y)
+			  return x;
+			else if(x < y)
+			  return y;
+			else
+			  return 0;
+		  }
+		}
+		</TD></TR></TBODY></TABLE><BR>
+			<HR>
+				<center><H3 style="color: darkseagreen;">  Labeled break and continue Statements:-</H3></center>
+				<H3 style="color: grey;">
+					<LI>The most common to use break and continue statement labels with looping statements like for or while. A label statement must be placed just before the statement being labeled, and it consists of a valid identifier that ends with a colon : .	
+					<LI>The labeled varieties are needed only in situations where you have nested loop and need to indicate which of the nested loops you want to break. 
+					<LI>The break statement will exit out of the labeled loop, as opposed to the innermost loop.
+					</LI></LI></LI></H3>
+
+					<H3 style="color:brown;"> Example:-</H3>
+
+
+					<TABLE width="400" bgcolor="aliceblue" border="0">
+					  <TBODY>
+					  <TR>
+						<TD><pre>
+							/*  Labeled break and continue statements Example
+							Save with file name LabeledStatements.java  */
+						  
+						public class LabeledStatements
+						{
+						  public static void main(String args[])
+						  {
+							System.out.println("Labeled break and continue statements Example");
+							outer:
+							for(int i = 1 ; ; i++)
+							{
+								for(int j = 1 ; j < 11 ; j++)
+								{
+								  if( j > i)
+								  {
+									System.out.println();
+									continue outer;
+								  }
+								  System.out.print(" *");
+								}
+								if(i == 10)
+								  break;
+							}
+						  }
+						</TD></TR></TBODY></TABLE><BR>
+							<HR>
+			
+			
+			
+			
+			
+			
+			
+			</div></p></body></html>

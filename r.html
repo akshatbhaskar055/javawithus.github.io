@@ -1,0 +1,253 @@
+<html>
+<head>
+ <link rel="stylesheet" href="j.css">
+ <style>
+  font{
+    text-shadow: 2px 2px 8px #FF0000;
+  }
+  
+  </style>
+</head>
+<body>
+<br>
+<font face="Century Gothic" size="8" color="red"><center>    Java.withUs </center></font>
+ 
+
+<p align="right"  style="color:maroon;" > Learn Anything!    </p>
+     <nav>
+      <ul>
+        <li>
+            <a href=home.html>Home</a>
+        </li>
+        <li>
+            <a href=data.html>Data Types</a>
+        </li>
+        <li>
+            <a href=r.html>Variables</a>
+        </li>
+        <li>
+            <a href=type_conversion.html>Type Conversion</a>
+        </li>
+        <li>
+            <a href=selection.html>Selection Statement</a>
+        </li>
+        <li>
+            <a href=itertion.html>Iteration Statement</a>
+        </li>
+         <li>
+            <a href=branching.html>Branch Control Statement</a>
+        </li>
+      </ul>
+    </nav>
+
+    <br ><br>
+     <h1 style="color:black;"> <u><CENTER>Variables In Java </u></center></h1>
+   
+
+
+
+
+
+<P>
+  <div style="margin: 20px 100px 20px 100px;">
+<H2 style="color:darkseagreen;">
+  
+<UL>A variable is a name given to a memory location. It is the basic 
+                unit of storage in a program.   </H2>
+                <H3 style="color: grey;"> 
+  <LI> The value stored in a variable can be changed during program            
+  execution.</LI>
+  <LI>A variable is only a name given to a memory location, all the              
+  operations done on the variable effects that memory location.</LI>
+  <LI>In Java, all the variables must be declared before use.</LI></UL></H3>
+<P></P><BR>  
+  <H3 style="color:darkseagreen;">    We can declare variables in java as follows:  </H3>   
+  <CENter>><img src="r.JPEG" align="middle" alt="java_variable" widhth="300" breadth="600" >   </CENter>  <BR>
+<H2 style="color: black;"><U> Rules for writing variables:</U></H2>
+<OL type="i">
+  <H3 style="color: grey;">
+  <LI> First letter must be an alphabet.     
+  <LI> The length of the variable should not exceed more than 32 characters.    
+  <LI> No special symbols are allowed except underscore.    
+  <LI> No keywords should use as variable names.</LI>
+  <LI>Examples of illegal identifiers: 123abc, -salary.</LI>
+  <LI> Examples of legal identifiers: age, $salary, _value, 
+__1_value.</LI></H3></OL><BR>
+<H2 style="color: black;"><U>
+<CENTER>Types of Variables</CENTER></U></H2>
+<H3 style="color: darkseagreen;">  There are three types of variables:</H3> <H3 style="color: grey;"> 
+<OL type="1">
+  <LI>Static Variable</LI>
+  <LI>Instance Variable</LI>
+  <LI>Local Variable</LI></OL>
+<H2 style="color: black;"> 1.<U> Local Variables: </U></H2> <H3 style="color: grey;">A variable defined within 
+a block or method or constructor is called local variable.  
+<UL>
+  <LI>These variable are created when the block in entered or the function is 
+  called and destroyed after exiting from the block or when the call returns 
+  from the function.</LI>
+  <LI>The scope of these variables exists only within the block in which the 
+  variable is declared. i.e. we can access these variable only within that 
+  block.</LI>
+  <LI>Initilisation of Local Variable is Mandatory.</LI></UL><BR></H3>
+    
+<H2 style="color: black;"> Example</H2>
+
+
+<DIV style="padding: 20px; color: black; background-color: aliceblue;">
+  
+  <TR>
+    <TD><pre>public class StudentDetails { 
+                public void StudentAge() 
+                   { 
+                     // local variable age 
+                       int age = 0;  
+                       age = age + 5;        
+                       System.out.println("Student age is : " +  age); 
+                   }     
+                public static void main(String args[]) 
+                   { 
+                 StudentDetails obj = new StudentDetails();
+                 obj.StudentAge(); 
+                   } 
+                 }
+                 </DIV>
+                
+                </pre><BR></TD></TR></TBODY></TABLE><BR>
+<H2 style="color: black;"> Output</H2>
+<DIV style="padding: 20px; color: black; background-color: aliceblue;"><pre>Student age is : 5 </pre></DIV>
+<HR>
+<BR>
+<H2 style="color:black;"> 2.<U>Instance Variable</U></H2> <H3 style="color: grey;">  Instance variables are 
+non-static variables and are declared in a class outside any method, constructor 
+or block.  
+<UL>
+  <LI>As instance variables are declared in a class, these variables are created 
+  when an object of the class is created and destroyed when the object is 
+  destroyed.</LI>
+  <LI>Unlike local variables, we may use access specifiers for instance 
+  variables. If we do not specify any access specifier then the default access 
+  specifier will be used.</LI>
+  <LI>Initilisation of Instance Variable is not Mandatory. Its default value is 
+  0</LI>
+  <LI>Instance Variable can be accessed only by creating objects.</LI></H3>
+  <H2 style="color: black;"> Example</H2>
+ 
+
+  <DIV style="padding: 20px; color: black; background-color: aliceblue;">
+    <TBODY>
+    <TR>
+      <TD>
+        <pre>
+          
+import java.io.*;
+class Marks 
+{
+     // These variables are instance variables.
+     // These variables are in a class
+     // and are not inside any function
+  int engMarks;
+  int mathsMarks;
+  int phyMarks;
+}
+class MarksDemo
+{
+public static void main(String args[])
+  {
+    Marks obj1 = new Marks();         // first object
+    obj1.engMarks = 50;
+    obj1.mathsMarks = 80;
+    obj1.phyMarks = 90;
+
+    Marks obj2 = new Marks();         // second object
+    obj2.engMarks = 80;
+    obj2.mathsMarks = 60;
+    obj2.phyMarks = 85;
+
+System.out.println("Marks for first object:");        // displaying marks for first object
+System.out.println(obj1.engMarks);
+System.out.println(obj1.mathsMarks);
+System.out.println(obj1.phyMarks);
+
+System.out.println("Marks for second object:");       // displaying marks for second object
+System.out.println(obj2.engMarks);
+System.out.println(obj2.mathsMarks);
+System.out.println(obj2.phyMarks);
+  }
+}
+</div>  </pre>
+      </TR></TBODY></TABLE><BR>
+  <H2 style="color: black;"> Output</H2>
+  <DIV style="padding: 20px; color: black; background-color: aliceblue;">
+    <pre>
+      Marks for first object:
+      50
+      80
+      90
+      Marks for second object:
+      80
+      60
+      85 </pre></DIV>
+  <HR>
+  <BR></UL></H3>
+
+<H2 style="color:black;"> 3. <u>Static Variables</u>:</H2><H3 style="color: grey;">Static variables are also known as Class variables. 
+  
+<ul>
+<li>
+    These variables are declared similarly as instance variables, the difference is that static variables are declared using the static keyword within a class outside any method constructor or block.</li>
+   <li> Unlike instance variables, we can only have one copy of a static variable per class irrespective of how many objects we create.</li>
+   <li> Static variables are created at the start of program execution and destroyed automatically when execution ends.</li>
+   <li> Initilisation of Static Variable is not Mandatory. Its default value is 0.</li>
+   <li> If we access the static variable like Instance variable (through an object), the compiler will show the warning message and it won’t halt the program. The compiler will replace the object name to class name automatically.</li>
+   <li> If we access the static variable without the class name, Compiler will automatically append the class name.</li></ul>
+<H3 style="color:darkseagreen;">
+To access static variables, we need not create an object of that class, we can simply access the variable as<br>
+</H3>
+
+<DIV style="padding: 20px; color: black; background-color: aliceblue;">
+<h3>class_name.variable_name;</h3>
+</DIV>
+  
+
+<H2 style="color: black;"> Example</H2>
+
+
+<TABLE width="400" bgcolor="aliceblue" border="0">
+  <TBODY>
+  <TR>
+    <TD>
+      <pre>
+        import java.io.*;
+        class Emp 
+        {
+          public static double salary;        // static variable salary
+          public static String name = "Harsh";
+        } 
+        public class EmpDemo 
+        {
+          public static void main(String args[])
+           {
+              Emp.salary = 1000;         // accessing static variable without object
+              System.out.println(Emp.name + "'s average salary:"+ Emp.salary);
+           }
+        } 
+      </pre>
+    </td></tr></table><br>
+<H2 style="color: black;"> Output</H2>
+
+<DIV style="padding: 20px; color: black; background-color: aliceblue;">
+  <pre>
+Harsh's average salary:1000.0
+</pre>
+</DIV>
+</H3>
+</P>
+</div>
+<hr>
+<br>
+<br>
+
+
+</body>
+</html>

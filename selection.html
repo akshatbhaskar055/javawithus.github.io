@@ -1,0 +1,221 @@
+<html>
+<head>
+ <link rel="stylesheet" href="j.css">
+ <style>
+  font{
+    text-shadow: 2px 2px 8px #FF0000;
+  }
+  
+  </style>
+</head>
+<body>
+<br>
+<font face="Century Gothic" size="8" color="red"><center>    Java.withUs </center></font> 
+
+<p align="right"  style="color:maroon;" > Learn Anything!    </p>
+     <nav>
+      <ul>
+        <li>
+            <a href=home.html>Home</a>
+        </li>
+        <li>
+            <a href=data.html>Data Types</a>
+        </li>
+        <li>
+            <a href=r.html>Variables</a>
+        </li>
+        <li>
+            <a href=type_conversion.html>Type Conversion</a>
+        </li>
+        <li>
+            <a href=selection.html>Selection Statement</a>
+        </li>
+        <li>
+            <a href=iteration.html>Iteration Statement</a>
+        </li>
+         <li>
+            <a href=branching.html>Branch Control Statement</a>
+        </li>
+      </ul>
+    </nav>
+
+    <br ><br>
+     <h1 style="color:black;"> <u><center>Selection Statments in Java </u></center></h1>
+   
+
+
+
+
+
+<P>
+  <div style="margin: 20px 100px 20px 100px;">
+<H2 style="color: darkseagreen;">
+<UL>A selection statement selects among a set of statements depending on
+  the value of a controlling expression. The selection statements are
+  the if  statement and the switch statement..</H2>    
+ 
+  <CENTER><H2 style="color: black;"><U>TYPES OF SELECTION METHOD</U></H2></CENTER>
+  <H3 style="color: darkseagreen;"> There are three types of Selection Method:-</H3>
+  <OL type="1">
+    <H3 style="color: grey;">
+    <LI> If statment.       
+    <LI> switch statment.    
+    </LI></H3></OL>
+
+<H2 style="color: black;"> 1. If Statment: </H2><H3 style="color: grey;">The Java if statement tests the condition. It executes the "if" block if condition is true or the statement can be followed by an optional else statement, which executes when the Boolean expression is false.
+<UL>
+    <img src="a1.png" align="right"
+      alt="while loop" height="500" width="600">
+     
+  <ol=1>
+     <li> The statement following the control expression is executed
+      if the value of the control expression is true (nonzero). An
+      <CODE>if</CODE> statement can be written with an optional
+      <CODE>else</CODE> clause that is executed if the control expression
+      is false (0).</li>
+      <h3 style="color: brown;">Syntax:-</h3>
+      <TABLE width="400" bgcolor="aliceblue" border="0">
+          <TBODY>
+          <TR>
+          <td>
+         <PRE>
+          if ( <EM>expression</EM> )
+          
+             <EM>statement</EM>
+          </PRE>
+          
+          <PRE>
+          else(opt)
+          
+             <EM>else-statement</EM>(opt)
+          </PRE></td></TR></TBODY></TABLE>
+            
+     
+<H3 style="color:brown;"> Example:-</H3>
+
+
+<TABLE width="400" bgcolor="aliceblue" border="0">
+  <TBODY>
+  <TR>
+    <TD>
+    <PRE>
+      if (i < 1)
+         funct(i);
+      else
+         {
+         i = x++;
+         funct(i);
+         }
+      </PRE></TD></TR></TBODY></TABLE>
+      <BR><li>
+        In this example, if the value of <CODE>i</CODE> is less than 1, then
+the statement <CODE>funct(i)</CODE> is executed and the compound
+statement following the keyword <CODE>else</CODE> is not executed.
+If the value of <CODE>i</CODE> is not less than 1, then only the
+compound statement following the keyword <CODE>else</CODE> is
+executed.</li><BR>
+<li>The control expression in a selection statement is usually a logical
+  expression, but it can be any expression of scalar type.
+  </li> <BR> 
+    <li>When <CODE>if</CODE> statements are nested, an <CODE>else</CODE>
+      clause matches the most recent <CODE>if</CODE> statement that does
+      not have an <CODE>else</CODE> clause, and is in the same block. For
+      example:</li>
+  <H3 style="color:brown;"> Example:-</H3>
+
+
+<TABLE width="400" bgcolor="aliceblue" border="0">
+  <TBODY>
+  <TR>
+    <TD>
+      <PRE>
+        if (i < 1)
+            {
+            if (j < 1)
+                funct(j);
+            if (k < 1)            /* This if statement is associated with */
+                funct(k);
+            else                  /* this else clause.                    */
+                funct(j + k);
+            }
+        
+      </PRE></TD></TR></TBODY></TABLE>
+    <HR>
+
+
+  <H2 style="color: black;"> 2. Switch Statment: </H2><H3 style="color: grey;">A switch statement allows a variable to be tested for equality against a list of values. Each value is called a case, and the variable being switched on is checked for each case.<BR>
+    <img src="a2.png" align="right"
+    alt="while loop" height="350" width="550">
+  <h3 style="color: brown;">Syntax:-</h3>
+      <TABLE width="400" bgcolor="aliceblue" border="0">
+          <TBODY>
+          <TR>
+            <td><PRE>
+              switch(expression) {
+                case value :
+                   // Statements
+                   break; // optional
+                
+                case value :
+                   // Statements
+                   break; // optional
+                
+                // You can have any number of case statements.
+                default : // Optional
+                   // Statements
+             }
+              </PRE></td></TR></TBODY></TABLE>
+               
+       <H3 style="color: darkseagreen;"> The following rules apply to a switch statement:-</H3>
+         <OL type="1">
+         <H3 style="color: grey;">
+             <LI>The variable used in a switch statement can only be integers, convertable integers (byte, short, char), strings and enums.
+             <LI>You can have any number of case statements within a switch. Each case is followed by the value to be compared to and a colon.
+             <LI>You can have any number of case statements within a switch. Each case is followed by the value to be compared to and a colon.
+             <LI>When the variable being switched on is equal to a case, the statements following that case will execute until a break statement is reached.
+             <LI>When a break statement is reached, the switch terminates, and the flow of control jumps to the next line following the switch statement.
+               <LI>Not every case needs to contain a break. If no break appears, the flow of control will fall through to subsequent cases until a break is reached.    
+             </LI></H3></OL>
+          <H3 style="color:brown;"> Example:-</H3>
+
+
+<TABLE width="400" bgcolor="aliceblue" border="0">
+  <TBODY>
+  <TR>
+    <TD><pre>
+      public class Test {
+
+        public static void main(String args[]) {
+           // char grade = args[0].charAt(0);
+           char grade = 'C';
+     
+           switch(grade) {
+              case 'A' :
+                 System.out.println("Excellent!"); 
+                 break;
+              case 'B' :
+              case 'C' :
+                 System.out.println("Well done");
+                 break;
+              case 'D' :
+                 System.out.println("You passed");
+              case 'F' :
+                 System.out.println("Better try again");
+                 break;
+              default :
+                 System.out.println("Invalid grade");
+           }
+           System.out.println("Your grade is " + grade);
+        }
+     }
+    </pre></TD></TR></TBODY></TABLE><BR>
+
+      <H3 style="color: brown;"> Output:-</H3>
+      <TABLE width="400" bgcolor="aliceblue" border="0"><td> Well done <BR>
+        Your grade is C </td></TABLE>
+      </div>
+      </P>
+      </body>
+      </html>
+      
+      
